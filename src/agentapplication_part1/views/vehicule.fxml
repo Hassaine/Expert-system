@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agentapplication_part1.controllers.VehiculeController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <JFXComboBox fx:id="vehiculeCBox" labelFloat="true" layoutX="40.0" layoutY="44.0" prefHeight="25.0" prefWidth="241.0" promptText="vehicule" AnchorPane.topAnchor="45.0" />
+      <JFXComboBox fx:id="vehiculeTypeCbox" labelFloat="true" layoutX="41.0" layoutY="108.0" prefHeight="25.0" prefWidth="241.0" promptText="vehiculeType" AnchorPane.topAnchor="115.0" />
+      <JFXComboBox fx:id="sizeCBox" labelFloat="true" layoutX="41.0" layoutY="169.0" prefHeight="25.0" prefWidth="241.0" promptText="size" AnchorPane.topAnchor="185.0" />
+      <JFXComboBox fx:id="motorCBox" labelFloat="true" layoutX="41.0" layoutY="249.0" prefHeight="25.0" prefWidth="241.0" promptText="motor" AnchorPane.topAnchor="255.0" />
+      <JFXComboBox fx:id="numWheelsCBox" labelFloat="true" layoutX="41.0" layoutY="332.0" prefHeight="25.0" prefWidth="241.0" promptText="number of wheels" AnchorPane.topAnchor="325.0" />
+      <JFXComboBox fx:id="numDoorsCBox" labelFloat="true" layoutX="41.0" layoutY="376.0" prefHeight="25.0" prefWidth="241.0" promptText="number of doors" AnchorPane.topAnchor="395.0" />
+      <JFXButton layoutX="105.0" layoutY="451.0" onAction="#setButton" prefHeight="25.0" prefWidth="107.0" style="ef: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 ); -fx-background-color: rgb(15,23,44);" text="SET" textFill="#efdfdf">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      
+    </children>
+</AnchorPane>

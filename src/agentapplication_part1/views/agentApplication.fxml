@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox   prefHeight="400.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agentapplication_part1.controllers.MainApplicationController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+                  <Menu mnemonicParsing="false" text="select ruleBase">
+                    <items>
+                        <CheckMenuItem fx:id="vehiculeMCheck" mnemonicParsing="false" onAction="#vehiculeRBSelected" text="vehicule" />
+                        <CheckMenuItem fx:id="medcinMCheck" mnemonicParsing="false" onAction="#medcinRBSelected" text="medcin" />
+                    </items>
+                  </Menu>
+            <MenuItem mnemonicParsing="false" onAction="#newInstance" text="new " />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" onAction="#rest" text="reset" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#quit" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#about" text="About the application" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="135.0" prefWidth="580.0" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="389.0" prefWidth="598.0" style="-fx-background-color: rgb(15,23,44);">
+               <children>
+                  <AnchorPane layoutX="308.0" layoutY="-1.0" prefHeight="390.0" prefWidth="290.0" style="-fx-background-color: rgb(44,106,219);">
+                     <children>
+                        <Label alignment="CENTER" layoutX="-85.0" layoutY="-4.0" prefHeight="34.0" prefWidth="175.0" text="Expert System" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma" size="24.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="rbDisplayButton" alignment="BASELINE_CENTER" contentDisplay="RIGHT" graphicTextGap="13.0" layoutX="57.0" layoutY="44.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#displayRB" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: rgb(15,23,44); -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );" text="Rule base display&#10;&#10;" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Tahoma" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="varValuesButton" alignment="BASELINE_CENTER" contentDisplay="RIGHT" graphicTextGap="13.0" layoutX="57.0" layoutY="126.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#displayVar" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: rgb(15,23,44); -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );" text="Variable values display&#10;&#10;" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Tahoma" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="defTestSetButton" alignment="BASELINE_CENTER" contentDisplay="RIGHT" graphicTextGap="13.0" layoutX="57.0" layoutY="209.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#defaultTestSet" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: rgb(15,23,44); -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );" text="Default test set&#10;" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Tahoma" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="performFCButton" alignment="BASELINE_CENTER" contentDisplay="RIGHT" graphicTextGap="13.0" layoutX="57.0" layoutY="293.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#performFC" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: rgb(15,23,44); -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );" text="perform forward chaining&#10;" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Tahoma" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <JFXTextArea fx:id="rules" layoutY="30.0" prefHeight="344.0" prefWidth="285.0" promptText="Display" style="-fx-text-fill: white; -fx-font-size: 1.5em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="297.0" AnchorPane.topAnchor="30.0" />
+               </children>
+            </AnchorPane>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

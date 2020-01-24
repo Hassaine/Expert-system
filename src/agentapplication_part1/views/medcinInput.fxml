@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agentapplication_part1.controllers.MedcinController">
+   <children>
+      <ImageView fitHeight="598.0" fitWidth="643.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@nikhil-kumar-231465.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="562.0" prefWidth="643.0" style="-fx-background-color: rgb(0, 64, 255,0.5);">
+         <children>
+            <JFXButton layoutX="51.0" layoutY="294.0" onAction="#aboutUs" prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;" text="ABOUT US" textFill="#0040ff" />
+            <JFXButton layoutX="187.0" layoutY="294.0" onAction="#contact" prefHeight="41.0" prefWidth="165.0" style="-fx-border-color: #fff; -fx-border-radius: 10px;" text="CONTACT A DOCTOR" textFill="WHITE" />
+            <Label layoutX="51.0" layoutY="175.0" prefHeight="119.0" prefWidth="287.0" text="Symptoms Inputs" textFill="#f2f2f2" wrapText="true">
+               <font>
+                  <Font name="Microsoft JhengHei UI Light" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXTextField fx:id="nezboucher" focusColor="#4a7dd0" labelFloat="true" layoutX="666.0" layoutY="63.0" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="NEZ BOUCHER" unFocusColor="#d7d7d7" />
+      <JFXTextField fx:id="douleurArticulaire" focusColor="#4a7dd0" labelFloat="true" layoutX="666.0" layoutY="114.0" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="DOULEUR ARTICULAIRE" unFocusColor="#d7d7d7" />
+      <JFXTextField fx:id="chaleurDEDC" focusColor="#4a7dd0" labelFloat="true" layoutX="666.0" layoutY="166.0" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="CHALEUR DANS LES EXTREMS DU COURPS" unFocusColor="#d7d7d7" />
+      <JFXTextField fx:id="toux" focusColor="#4a7dd0" labelFloat="true" layoutX="666.0" layoutY="218.0" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="TOUX" unFocusColor="#d7d7d7" />
+      <JFXTextField fx:id="vomisement" focusColor="#4a7dd0" labelFloat="true" layoutX="666.0" layoutY="368.0" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="VOMISEMENT" unFocusColor="#d7d7d7" />
+      <JFXButton buttonType="RAISED" layoutX="675.0" layoutY="512.0" onAction="#submit" prefHeight="41.0" prefWidth="140.0" ripplerFill="#bf78c2" style="-fx-border-color: rgb(0, 64, 255); -fx-border-radius: 10px; -fx-border-width: 0.5;" text="SUBMIT" textFill="#2f27c9" />
+      <JFXTextField fx:id="fatigue" focusColor="#4a7dd0" labelFloat="true" layoutX="666.0" layoutY="266.0" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="FATIGUE" unFocusColor="#d7d7d7" />
+      <JFXTextField fx:id="diarhee" focusColor="#4a7dd0" labelFloat="true" layoutX="666.0" layoutY="318.0" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="DIARRHEE" unFocusColor="#d7d7d7" />
+      <JFXTextField fx:id="coliquesDegistifs" focusColor="#4a7dd0" labelFloat="true" layoutX="666.0" layoutY="416.0" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="COLIQUES DEGISTIFS" unFocusColor="#d7d7d7" />
+      <JFXTextField fx:id="pert_dappitit" focusColor="#4a7dd0" labelFloat="true" layoutX="666.0" layoutY="15.0" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="PERT D'APPETIT" unFocusColor="#d7d7d7" />
+      <JFXTextField fx:id="mictionDouleureusse" focusColor="#4a7dd0" labelFloat="true" layoutX="666.0" layoutY="465.0" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="MICTION DOULEUREUSSE" unFocusColor="#d7d7d7" />
+   </children>
+</AnchorPane>

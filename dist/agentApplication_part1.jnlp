@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="agentApplication_part1.jnlp">
+  <information>
+    <title>agentApplication_part1</title>
+    <vendor>Hassaine</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="agentApplication_part1.jar" size="126161" download="eager" />
+    <jar href="lib\gson-2.8.5.jar" size="241622" download="eager" />
+    <jar href="lib\jfoenix-8.0.4.jar" size="2487326" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="agentApplication_part1" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="agentapplication_part1.AgentApplication_part1"  name="agentApplication_part1" />
+  <update check="always"/>
+</jnlp>
